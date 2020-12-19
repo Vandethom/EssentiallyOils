@@ -18,6 +18,7 @@
 
 .subtotal__gift{
     margin-right: 5px;
+    align-items: center;
 }
 
 .subtotal > button {

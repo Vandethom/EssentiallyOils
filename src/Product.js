@@ -1,8 +1,27 @@
 import React from 'react';
 import "./Product.css";
-import oliver from './oliver-mortar.jpg';
+import { useStateValue } from './StateProvider';
 
-function Product({ title, image, price, rating}) {
+function Product({ id, title, image, price, rating}) {
+
+        const [{ basket }, dispatch] = useStateValue();
+
+        console.log("Votre panier: ", basket);
+
+        const addToBasket = () => {
+            // dispatch the item into the data layer
+            dispatch({
+                type: 'ADD_TO_BASKET',
+                item: {
+                    id: id,
+                    title: title,
+                    image: image,
+                    price: price,
+                    rating: rating,
+                },
+            })
+        };
+    
     return (
         <div className="product">
             <div className="product__info">
@@ -22,7 +41,7 @@ function Product({ title, image, price, rating}) {
 
             <img src={ image } alt="Photo d'un article" />
             
-            <button>Ajouter au panier</button>
+            <button onClick={ addToBasket }>Ajouter au panier</button>
         </div>
     )
 }

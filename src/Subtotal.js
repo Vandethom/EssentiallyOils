@@ -26,6 +26,8 @@ function Subtotal() {
                 thousandSeparator={ true }
                 prefix={ "€" }
             />
+
+            <button>Valider ma commande</button>
         </div>
     )
 }
