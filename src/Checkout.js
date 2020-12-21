@@ -2,23 +2,32 @@ import React from 'react';
 import "./Checkout.css";
 import Banner from './banner.png';
 import Subtotal from './Subtotal';
+import CheckoutProduct from "./CheckoutProduct";
+import { useStateValue } from './StateProvider';
 
 function Checkout() {
+
+    const [{ basket }, dispatch] = useStateValue();
+    
     return (
         <div className="checkout">
             <div className="checkout__left">
                 <img className="checkout__ad" src={ Banner } alt="photo d'un article" />
 
                 <div>
-                    <h2>
+                    <h2 className="checkout__title">
                         Votre panier
                     </h2>
 
-                    { /* BasketItem */ }
-                    { /* BasketItem */ }
-                    { /* BasketItem */ }
-                    { /* BasketItem */ }
-                    { /* BasketItem */ }
+                    { basket.map(item => (
+                        <CheckoutProduct
+                            id={ item.id }
+                            title={ item.title }
+                            image={ item.image }
+                            price={ item.price }
+                            rating={ item.rating }
+                        />
+                    ))}
                 </div>
             </div>
 
