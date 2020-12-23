@@ -7,7 +7,7 @@ import { useStateValue } from './StateProvider';
 
 function Checkout() {
 
-    const [{ basket }, dispatch] = useStateValue();
+    const [{ basket, user }, dispatch] = useStateValue();
     
     return (
         <div className="checkout">
@@ -15,6 +15,9 @@ function Checkout() {
                 <img className="checkout__ad" src={ Banner } alt="photo d'un article" />
 
                 <div>
+                    <h3>
+                        Bonjour { user?.email }
+                    </h3>
                     <h2 className="checkout__title">
                         Votre panier
                     </h2>
