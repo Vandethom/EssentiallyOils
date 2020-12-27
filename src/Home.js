@@ -13,20 +13,23 @@ function Home() {
 
                 <div className="home__row">
                     <Product 
+                    id={ 456123789 }
                     title="Pilon et mortier en bois d'olivier." 
-                    price={39.90} 
+                    price={ 39.90 } 
                     image="https://www.cdiscount.com/pdt2/7/1/9/1/300x300/ber3700598603719/rw/berard-petit-mortier-bois-olivier-90080.jpg" 
-                    rating={5} />
+                    rating={ 5 } />
                     <Product 
+                    id={ 456789123 }
                     title="Diffuseur d'huiles essentielles 300ml" 
-                    price={29.90} 
+                    price={ 29.90 } 
                     image="https://www.cdiscount.com/pdt2/6/0/0/1/300x300/auc0740306563600/rw/dewinner-300ml-humidificateur-portable-ultrasoniqu.jpg" 
-                    rating={4} />
+                    rating={ 4 } />
                     <Product 
+                    id={789456123}
                     title="Huille essentielle BIO de menthe verte 10ml" 
-                    price={2.20} 
+                    price={ 2.20 } 
                     image="https://www.cdiscount.com/pdt2/7/7/4/1/700x700/auc3760246895774/rw/huile-essentielle-bio-de-menthe-verte-10ml.jpg" 
-                    rating={5} />
+                    rating={ 5 } />
                 </div>
 
                 <div className="home__row">
@@ -36,15 +39,17 @@ function Home() {
 
                 <div className="home__row">
                     <Product 
+                    id={ 123456789 }
                     title="Huile de massage à l'arnica" 
                     price={11.10} 
                     image="https://www.cdiscount.com/pdt2/3/4/6/1/700x700/wel3596206226346/rw/weleda-huile-de-massage-cor.jpg" 
-                    rating={3} />
+                    rating={ 3 } />
                     <Product 
+                    id={ 7531598462 }
                     title="Ensemble d’huile essentielle d’aromathérapie 3x10ml : Patchouli, myrrhe, menthe poivrée" 
-                    price={15} 
+                    price={ 15 } 
                     image="https://www.cdiscount.com/pdt2/6/2/7/1/700x700/auc8425520915627/rw/ensemble-d-huile-essentielle-d-aromatherapie-3x10.jpg" 
-                    rating={4} />
+                    rating={ 4 } />
                 </div>
             </div>
         </div>
