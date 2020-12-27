@@ -38,6 +38,7 @@ function Payment() {
         getClientSecret();
     }, [basket])
 
+    console.log(getBasketTotal(basket))
     console.log('The secret is: ', clientSecret)
 
     const handleSubmit = async (e) => {
