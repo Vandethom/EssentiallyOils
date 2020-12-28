@@ -51,15 +51,6 @@ function Header() {
                         </span>
                     </div>
                 </Link>
-                
-                <div className="header__option">
-                <span className="header__optionLineOne">
-                        Votre
-                    </span>
-                    <span className="header__optionLineTwo">
-                        Prime
-                    </span>
-                </div>
 
                 <div className="header__optionBasket">
                     <Link to="/checkout">

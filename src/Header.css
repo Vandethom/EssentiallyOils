@@ -1,4 +1,5 @@
 .header {
+ width: 100%;
  height: 75px;
  display: flex;
  align-items: center;
@@ -12,7 +13,6 @@
     width: 100px;
     height: 75px;
     object-fit: contain;
-    background-color: #daf8f7;
     margin: 0 20px;
 }
 
@@ -62,7 +62,19 @@
 
 .header__option {
     display: flex;
+    text-decoration: none;
     flex-direction: column;
     margin: 0 10px 0 10px;
     color:#527f34;
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        justify-content: space-around;
+        width: 100%;
+    }
+    
+    .header__logo, .header__searchInput, .header__search {
+        display: none;
+    }
 }

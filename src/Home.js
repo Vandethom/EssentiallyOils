@@ -9,7 +9,7 @@ function Home() {
     return (
         <div className="Home">
             <div className="home__container">
-                <img src={herbs} className="home__image" alt="background with herbs"/>
+                <img className="home__image" src={herbs} className="home__image" alt="background with herbs"/>
 
                 <div className="home__row">
                     <Product 

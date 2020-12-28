@@ -20,3 +20,13 @@
     margin-bottom: -350px;
     mask-image: linear-gradient(to top, transparent 35%, black 75%);
 }
+
+@media only screen and (max-width: 600px) {
+    .home__row {
+        flex-direction: column;
+    }
+
+    .home__image {
+        content: url('../src/responsiveHerbs.png')
+    }
+}
